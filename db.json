@@ -1,1 +1,230 @@
+{
+  "Version": 1,
+  "Header": {
+    "MessageId": "d084eec3-1111-2222-8c0a-8388f7edde2b",
+    "MessageType": "BookingRequest",
+    "MessageCreatedDateTime": "2024-03-08T10:41:56Z",
+    "MessageBusinessChannel": "MNSS",
+    "MessageAction": "Create",
+    "MessageParties": [
+      {
+        "RoleName": "MessageSender",
+        "PartyId": "MICROSOFT"
+      },
+      {
+        "RoleName": "MessageReceiver",
+        "PartyId": "TMC"
+      }
+    ]
+  },
+  "Shipments": [
+    {
+      "TransactionConfirmationNumber": "ITNRefrenceNumber",
+      "Identifiers": [
+        {
+          "IdentifierTypeName": "SupplierShipmentReferenceNumber",
+          "IdentifierId": "SupplierShipmentReferenceNumber12345"
+        }
+      ],
+      "DeclaredShipmentValueAmount": 3000,
+      "IsoCurrencyCode": "USD",
+      "PlannedShipmentTimestamp": "2024-03-11T00:00:00Z",
+      "PackagingInstructions": "Specific shipping instructions",
+      "Parties": [
+        {
+          "RoleName": "ShipFrom",
+          "PartyId": "ABC01",
+          "PartyName": "<<PartyName>>",
+          "PartyTelephoneNumbers": [
+            {
+              "TelephoneNumber": "0000000000",
+              "TelephoneNumberTypeName": "Business"
+            }
+          ],
+          "PartyEmails": [
+            {
+              "EmailTypeName": "Business",
+              "EmailAddress": "email@somedomain.com"
+            },
+            {
+              "EmailTypeName": "Alternate",
+              "EmailAddress": "email@domainname.com"
+            }
+          ],
+          "Location": {
+            "LocationAddressLine1": "AddressLine1",
+            "LocationAddressLine2": "AddressLine2",
+            "LocationCityName": "CityName",
+            "LocationStateOrProvinceCode": "CA",
+            "LocationCountryCode": "USA",
+            "LocationZipCode": "12345"
+          }
+        },
+        {
+          "RoleName": "ShipTo",
+          "PartyId": "ABC01",
+          "PartyName": "<<PartyName>>",
+          "PartyTelephoneNumbers": [
+            {
+              "TelephoneNumber": "0000000000",
+              "TelephoneNumberTypeName": "Business"
+            }
+          ],
+          "PartyEmails": [
+            {
+              "EmailTypeName": "Business",
+              "EmailAddress": "email@somedomain.com"
+            },
+            {
+              "EmailTypeName": "Alternate",
+              "EmailAddress": "email@domainname.com"
+            }
+          ],
+          "Location": {
+            "LocationAddressLine1": "AddressLine1",
+            "LocationAddressLine2": "AddressLine2",
+            "LocationCityName": "CityName",
+            "LocationStateOrProvinceCode": "CA",
+            "LocationCountryCode": "USA",
+            "LocationZipCode": "12345"
+          }
+        }
+      ],
+      "ShipmentLines": [
+        {
+          "Orders": [
+            {
+              "OrderTypeName": "PurchaseOrder",
+              "OrderId": "6000965495",
+              "VendorItemSku": "M6789012-002",
+              "ComponentPartIdentifier": "ID123",
+              "ItemSku": "MSF-016395",
+              "OrderLineNumber": "00002",
+              "Quantity": 12,
+              "QuantityUnitOfMeasureName": "Each"
+            },
+            {
+              "OrderTypeName": "PurchaseOrder",
+              "OrderId": "6000965496",
+              "VendorItemSku": "M6789012-002",
+              "ComponentPartIdentifier": "ID123",
+              "ItemSku": "MSF-016395",
+              "OrderLineNumber": "00004",
+              "Quantity": 12,
+              "QuantityUnitOfMeasureName": "Each"
+            }
+          ],
+          "ItemPackagings": [
+            {
+              "PackagingTypeName": "Pallet",
+              "PackagingUnitId": "PLT-0001",
+              "PackingHierarchySequenceNumber": 1,
+              "Quantity": 24,
+              "QuantityUnitOfMeasureName": "Each",
+              "PackedWeight": 12.5,
+              "WeightUnitOfMeasureName": "KILO",
+              "PackedLength": 40,
+              "PackedWidth": 30,
+              "PackedHeight": 20,
+              "LengthWidthHeightUnitOfMeasureName": "CMET",
+              "PackedVolume": 24,
+              "VolumeUnitOfMeasureName": "CBME"
+            }
+          ]
+        },
+        {
+          "Orders": [
+            {
+              "OrderTypeName": "PurchaseOrder",
+              "OrderId": "6000965494",
+              "VendorItemSku": "M6789012-002",
+              "ComponentPartIdentifier": "ID123",
+              "ItemSku": "MSF-016395",
+              "OrderLineNumber": "00002",
+              "Quantity": 2,
+              "QuantityUnitOfMeasureName": "Each"
+            },
+            {
+              "OrderTypeName": "PurchaseOrder",
+              "OrderId": "6000965493",
+              "VendorItemSku": "M6789012-002",
+              "ComponentPartIdentifier": "ID123",
+              "ItemSku": "MSF-016395",
+              "OrderLineNumber": "00003",
+              "Quantity": 2,
+              "QuantityUnitOfMeasureName": "Each"
+            }
+          ],
+          "ItemPackagings": [
+            {
+              "PackagingTypeName": "Pallet",
+              "PackagingUnitId": "PLT-0002",
+              "PackingHierarchySequenceNumber": 1,
+              "Quantity": 4,
+              "QuantityUnitOfMeasureName": "Each",
+              "PackedWeight": 12.5,
+              "WeightUnitOfMeasureName": "KILO",
+              "PackedLength": 40,
+              "PackedWidth": 30,
+              "PackedHeight": 20,
+              "LengthWidthHeightUnitOfMeasureName": "CMET",
+              "PackedVolume": 24,
+              "VolumeUnitOfMeasureName": "CBME"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Items": [
+    {
+      "VendorItemSku": "M6789012-001",
+      "ComponentPartIdentifier": "ID123",
+      "ItemSku": "MSF-016395",
+      "SerializedItemIndicator": true,
+      "HazardousMaterialIndicator": true,
+      "HazardSeverityCategoryName": "UN1263",
+      "StackableIndicator": true,
+      "ItemWeight": 12.5,
+      "ItemLength": 40,
+      "ItemWidth": 30,
+      "ItemHeight": 20,
+      "ItemVolume": 20,
+      "WeightUnitOfMeasureName": "KILO",
+      "LengthWidthHeightUnitOfMeasureName": "CMET",
+      "VolumeUnitOfMeasureName": "CBME",
+      "ItemDocuments": [
+        {
+          "ItemDocumentTypeName": "SafetyDataSheet",
+          "DocumentUrl": "https://document.com/someguid"
+        }
+      ]
+    },
+    {
+      "VendorItemSku": "M6789012-001",
+      "ComponentPartIdentifier": "ID562",
+      "ItemSku": "MSF-016395",
+      "SerializedItemIndicator": true,
+      "HazardousMaterialIndicator": true,
+      "HazardSeverityCategoryName": "UN1263",
+      "StackableIndicator": true,
+      "ItemWeight": 12.5,
+      "ItemLength": 40,
+      "ItemWidth": 30,
+      "ItemHeight": 20,
+      "ItemVolume": 20,
+      "WeightUnitOfMeasureName": "KILO",
+      "LengthWidthHeightUnitOfMeasureName": "CMET",
+      "VolumeUnitOfMeasureName": "CBME",
+      "ItemDocuments": [
+        {
+          "ItemDocumentTypeName": "SafetyDataSheet",
+          "DocumentUrl": "https://document.com/someguid"
+        }
+      ]
+    }
+  ]
+}
+
+
 
