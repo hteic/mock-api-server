@@ -128,7 +128,7 @@
               "PackedHeight": 20,
               "LengthWidthHeightUnitOfMeasureName": "CMET",
               "PackedVolume": 24,
-              "VolumeUnitOfMeasureName": "CBE"
+              "VolumeUnitOfMeasureName": "CBME"
             }
           ]
         },
@@ -225,6 +225,3 @@
     }
   ]
 }
-
-
-
